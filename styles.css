@@ -51,3 +51,8 @@ a:focus-visible { outline:2px solid var(--ink); outline-offset:5px; }
  .photo-3,.photo-6 { grid-column:1 / 3; }
 }
 @media(prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } }
+
+/* Minimal placeholder pages */
+.simple-page { min-height:calc(100svh - 180px); display:flex; align-items:center; justify-content:center; text-align:center; padding-block:65px; }
+.simple-page h1 {font:normal clamp(42px,8vw,100px)/1 Georgia,serif;letter-spacing:-.06em;margin:0 0 20px;}
+.simple-page p {color:var(--muted);font-size:13px;line-height:1.7;margin:0;}
